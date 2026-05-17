@@ -1,16 +1,105 @@
 <!doctype html>
-<html lang="en">
+<html lang="uz">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Concert Seat Reservation Platform</title>
+    <title>UI/UX Dizayn Kursi | Alicode IT Academy</title>
     <link rel="stylesheet" href="styles.css" />
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="text/babel" src="app.js"></script>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div>+998 95 677 22 88 · Dush - Shan: 8:00 - 19:00</div>
+        <a href="#register">Ro'yxatdan o'tish</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <span class="badge">Boshlang'ich</span>
+        <h1>UI/UX Dizayn Kursi</h1>
+        <p>Bu kursda siz zamonaviy UI/UX dizayn asoslarini o'rganasiz. Figma dasturida ishlash, wireframe va prototip yaratish, dizayn tizimlari, foydalanuvchi tadqiqotlari va usability testingni real loyihalar orqali o'zlashtirasiz.</p>
+        <div class="hero-meta">
+          <div><strong>3 oy</strong><span>Davomiyligi</span></div>
+          <div><strong>60+ o'quvchi</strong><span>O'quvchilar</span></div>
+          <div><strong>600,000 so'm/oy</strong><span>Kurs narxi</span></div>
+        </div>
+      </section>
+
+      <section class="container grid">
+        <article class="card">
+          <h2>Nima uchun UI/UX Dizaynni o'rganish kerak?</h2>
+          <ul>
+            <li>IT sohasida yuqori talab</li><li>Kreativ va texnik ko'nikmalar uyg'unligi</li><li>Remote ishlash imkoniyati</li><li>Freelance uchun kuchli yo'nalish</li><li>Mahsulot yaratish jarayonining muhim qismi</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Nima uchun Alicode IT Academy?</h2>
+          <ul>
+            <li>Professional dizaynerlar dars beradi</li><li>Kurs davomida 4+ real dizayn loyiha</li><li>Figma va zamonaviy asboblar</li><li>Portfolio yaratish yordami</li><li>Ishga joylashish ko'magi</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="container card">
+        <h2>Kim bo'lasiz?</h2>
+        <div class="chips"><span>UI Designer</span><span>UX Designer</span><span>Product Designer</span><span>Web Designer</span><span>Mobile App Designer</span></div>
+      </section>
+
+      <section class="container grid">
+        <article class="card">
+          <h2>Maosh ma'lumotlari</h2>
+          <p><strong>O'zbekiston:</strong> 2,500,000 - 7,000,000 so'm/oy</p>
+          <p><strong>Global:</strong> $40,000 - $120,000/yil</p>
+          <small>*Maoshlar tajriba va kompaniyaga qarab farq qiladi.</small>
+        </article>
+        <article class="card">
+          <h2>O'rganiladigan texnologiyalar</h2>
+          <div class="chips"><span>Figma</span><span>Adobe XD</span><span>Sketch</span><span>ProtoPie</span><span>Maze</span></div>
+        </article>
+      </section>
+
+      <section class="container card">
+        <h2>Kurs mavzulari</h2>
+        <ul class="topics">
+          <li>UI/UX asoslari va printsiplari</li><li>Figma bilan ishlash</li><li>Wireframing va prototiplash</li><li>Dizayn tizimlari yaratish</li><li>User Research</li><li>Usability testing</li><li>Responsive dizayn</li><li>Design handoff</li><li>Portfolio yaratish</li><li>Dizayn trendlari</li>
+        </ul>
+      </section>
+
+      <section class="container grid">
+        <article class="card">
+          <h2>Talablar</h2>
+          <ul><li>Kompyuter bilan ishlash asoslari</li><li>Kreativlik va dizaynga qiziqish</li><li>Ingliz tili asoslari (tavsiya)</li></ul>
+        </article>
+        <article class="card">
+          <h2>Kursni tugatgandan keyin</h2>
+          <ul><li>Professional UI/UX ko'nikmalar</li><li>Figma'ni mukammal bilish</li><li>Portfolio bilan ishga tayyorlik</li><li>Foydalanuvchi markazli dizayn</li></ul>
+        </article>
+      </section>
+
+      <section id="register" class="container card">
+        <h2>UI/UX Dizayn kursiga ro'yxatdan o'ting</h2>
+        <p>Formani to'ldiring va biz siz bilan tez orada bog'lanamiz.</p>
+        <form class="form">
+          <input type="text" placeholder="Ismingiz *" required />
+          <input type="tel" placeholder="Telefon raqam *" required />
+          <input type="text" placeholder="Telegram username (ixtiyoriy)" />
+          <select required>
+            <option value="">Qaysi kursga qiziqasiz? *</option>
+            <option>UI/UX Dizayn</option><option>Frontend Development</option><option>Mobile Development</option><option>Grafik Dizayn</option>
+          </select>
+          <textarea rows="4" placeholder="Xabar"></textarea>
+          <button type="submit">Ariza yuborish</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Jizzax shahridagi eng yaxshi IT akademiya. 8 yillik tajriba, 500+ bitiruvchilar.</p>
+        <p>Zargarlik 81, Jizzax shahar · +998 95 677 22 88 · @alicode_qabul</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
